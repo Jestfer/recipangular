@@ -1,6 +1,6 @@
 <h1>These are our Recipes</h1>
 
-<div class="card" style="max-width: 500px">
+<div *ngFor="let recipe of recipes" class="card recipe-container" style="max-width: 500px; margin-bottom: 20px;">
   <img class="card-img-top recipe-pic" src="{{ recipe.pic ? recipe.pic : '/assets/Bowl-Empty.png' }}">
   <div class="card-body">
     <h3 class="card-title bg-light">{{ recipe.title }}</h3>

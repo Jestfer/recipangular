@@ -8,10 +8,12 @@ import { Recipe } from './model/recipe';
 })
 export class AppComponent {
 
-  recipe: Recipe;
+  recipes: Recipe[];
 
   constructor() {
-    this.recipe = new Recipe('Banana Bread', 'My fav recipe', null, null, '/assets/Banana-Bread.png');
+    this.recipes = [
+      new Recipe('Banana Bread', 'My fav recipe', null, null, '/assets/Banana-Bread.png'),
+      new Recipe('Nutella Bread', 'My second fav recipe', null, null, null)
+    ];
   }
-
 }
