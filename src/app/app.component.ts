@@ -11,7 +11,7 @@ export class AppComponent {
   recipe: Recipe;
 
   constructor() {
-    this.recipe = new Recipe('Banana Bread', 'My fav recipe', null, null, null);
+    this.recipe = new Recipe('Banana Bread', 'My fav recipe', null, null, '/assets/Banana-Bread.png');
   }
 
 }
