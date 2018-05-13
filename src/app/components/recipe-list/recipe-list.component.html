@@ -1,0 +1,12 @@
+<h1>These are our Recipes</h1>
+
+<div *ngFor="let recipe of recipes" class="card recipe-container">
+  <img class="card-img-top recipe-pic" src="{{ recipe.pic ? recipe.pic : '/assets/Bowl-Empty.png' }}">
+  <div class="card-body">
+    <h3 class="card-title bg-light">{{ recipe.title }}</h3>
+
+    <div class="card-text">
+      <p>{{ recipe.description }}</p>
+    </div>
+  </div>
+</div>
