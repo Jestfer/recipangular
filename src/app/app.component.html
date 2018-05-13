@@ -1,12 +1,10 @@
 <h1>These are our Recipes</h1>
 
 <div class="card" style="max-width: 500px">
+  <img class="card-img-top recipe-pic" src="{{ recipe.pic ? recipe.pic : '/assets/Bowl-Empty.png' }}">
   <div class="card-body">
-    <div class="recipe-pic">
-      <img src="{{ recipe.pic ? recipe.pic : '/assets/Bowl-Empty.png' }}" style="width: 150px; height: 150px">
-    </div>
-    
     <h3 class="card-title bg-light">{{ recipe.title }}</h3>
+
     <div class="card-text">
       <p>{{ recipe.description }}</p>
     </div>
