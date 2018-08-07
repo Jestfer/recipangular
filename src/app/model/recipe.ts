@@ -22,4 +22,6 @@ export class Recipe {
     this.instructions = instr;
     this.pic = p;
   }
+
+  // Add static class?? to allow user to create new recipe, and bind it with [(ngModel)] to allow it to be a recipe in Model and display it
 }

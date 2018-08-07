@@ -1,5 +1,3 @@
 <h1>These are our Recipes</h1>
 
-<div *ngFor="let recipe of recipes">
-  <app-recipe-summary [recipe]="recipe"></app-recipe-summary>
-</div>
+<app-recipe-summary *ngFor="let recipe of recipes" [recipe]="recipe" (zoomIn)="logRecipe(recipe)"></app-recipe-summary>

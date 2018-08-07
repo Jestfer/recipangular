@@ -17,4 +17,8 @@ export class RecipeListComponent {
       new Recipe('Nutella Bread', 'My second fav recipe', null, null, null)
     ];
   }
+
+  public logRecipe(recipe) {
+    console.log('User recipe', recipe);
+  }
 }
